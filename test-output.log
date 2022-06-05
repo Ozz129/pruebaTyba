@@ -1,0 +1,22 @@
+FAIL test/01_auth.test.js
+  ● esto deberia de retornar 404
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 404
+    Received: 200
+
+       8 |     .send(testAuthLogin);
+       9 |
+    > 10 |   expect(response.statusCode).toEqual(404);
+         |                               ^
+      11 | });
+      12 |
+      13 | test("esto deberia de retornar 201", async () => {
+
+      at Object.<anonymous> (test/01_auth.test.js:10:31)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 3 passed, 4 total
+Snapshots:   0 total
+Time:        2.534 s, estimated 3 s
