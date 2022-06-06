@@ -19,7 +19,7 @@ const getData = async (req, res) => {
 
     const options = {
         method: 'GET',
-        url: 'https://wft-geo-db.p.rapidapi.com/v1/geo/cities/Q65/locatedIn',
+        url: url,
         headers: {
           'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com',
           'X-RapidAPI-Key': process.env.RAPID_API_KEY
